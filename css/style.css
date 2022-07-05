@@ -1259,6 +1259,15 @@ ul.dropdown-menu li {
   font-weight: 700;
 }*/
 
+
+.about-info-container {
+  max-width: 1340px;
+}
+
+.about-container {
+  max-width: 1340px;
+}
+
 .about-item h2 em {
   font-style: italic;
   position: relative;
@@ -1419,6 +1428,11 @@ ul.dropdown-menu li {
   right: 0px;
   bottom: 0px;
 }
+
+.team-container {
+  max-width: 1340px;
+}
+
 
 .service-item {
   position: relative;
@@ -2189,7 +2203,7 @@ Footer
 }*/
 
 .footer-container {
-  max-width: 1640px;
+  max-width: 1540px;
 }
 
 .footer-content h4 {
@@ -2436,7 +2450,7 @@ Footer
 
 
 .footer-legal-container {
-  max-width: 1640px;
+  max-width: 1540px;
 }
 
 .footer-legal-links {

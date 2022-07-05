@@ -77,32 +77,13 @@
 
 <!-- Header Start --> 
 
+<!-- Header Start --> 
 <header class="navigation">
-	<div class="header-area">
-		<div class="main-header">
-			<header id="header" class="header fixed-top" data-scrollto-offset="0">
+	<div class="header-area header-transparent">
+		<div class="main-header ">
+			<div class="header fixed-top" data-scrollto-offset="0">
 				<div class="container-fluid">
-					<div class="header-top">
-						<div class="container">
-							<div class="row justify-content-between align-items-center">
-								<div class="col-lg-6 col-md-4">
-									<div class="header-top-socials text-left text-lg-left text-md-left">
-										<li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-8 text-center text-lg-right text-md-right">
-									<div class="header-top-info">
-										<a href="tel:+23-345-67890"><i class="fa fa-phone-alt mr-2"></i><span>+23-345-67890</span></a>
-										<a href="mailto:support@gmail.com" ><i class="fa fa-envelope mr-2"></i><span>support@gmail.com</span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row align-items-center">
+					<div class="row mx-0 px-0 align-items-center">
 						<!-- Logo -->
 						<div class="col-xl-3 col-lg-3">
 							<div class="header1-logo">
@@ -115,12 +96,12 @@
 								<div class="main-menu d-none d-lg-block">
 									<nav>
 										<ul id="navigation">
-											<li class="nav-item active">	                                                                                          
+										    <li class="nav-item active">	                                                                                          
 												<a class="nav-link" href="index.html">Home</a>
-											</li>
+										    </li>
 											<li class="nav-item"><a href="#">Chase <i class="fas fa-chevron-down small"></i></a>
 												<ul class="submenu">
-													<li><a href="#about">About Chase</a></li>
+													<li><a href="about.html">About Chase</a></li>
 													<li><a href="services.html">Services</a></li>
 												</ul>
 											</li>
@@ -132,7 +113,12 @@
 												</ul>
 											</li>
 											<li class="nav-item"><a href="#faqs">FAQs</a></li>
-											<li class="nav-item"><a href="#contact">Contact</a></li>
+											<li class="nav-item"><a href="#">Contact Us <i class="fas fa-chevron-down small"></i></a>
+												<ul class="submenu">
+													<li><a href="contact.html">Contact Our Team</a></li>
+													<li><a href="support.html">Get Support</a></li>
+													<li><a href="tel:+23-345-67890">Talk to Sales</a></li>
+												</ul>
 											<li class="nav-item"><a href="#"><span class="fa fa-light fa-globe"></span></a>
 												<ul class="submenu">
 													<li><a href="english.html">English</a></li>
@@ -149,29 +135,47 @@
 						<!--	<a href="login.html" class="btn3">Sign In</a>-->
 							<a href="#login" class="btn3"><i class="fa fa-user mr-2"></i>Sign In</a>
 						</form> 
+
 						<!-- Mobile Menu -->
-					</div>	
+						<div class="col-12">
+							<div class="mobile_menu d-block d-lg-none">
+								<div class="slicknav_menu">
+									<span class="slicknav_icon">
+										<a href="#" class="slicknav_btn slicknav_collapsed">
+											<span class="fa fa-bars"></span>
+										</a>
+									</span>
+							<!--	<ul class="slicknav_nav" aria-hidden="false" role="menu" style="display:block;">
+									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
+									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
+									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
+									  <li class="slicknav_parent slicknav_collapsed"></li>
+									 	 <a href="#" tabindex="0">Blog</a>
+										 <span class="slicknav_arrow mx-0 px-0">+</span>
+									</ul>	-->
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</header>			
+			</div>
 		</div>
-	</div>			
+	</div>
 </header>
-
-<!-- Header Close --> 
-
+<!-- Header End -->
 
 <section class="page-title bg-1">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block text-center">
-          <span class="text-white">About Us</span>
-          <h1 class="text-capitalize mb-4 text-lg">Our Company</h1>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-            <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white">About Chase</a></li>
-          </ul>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+				<li class="list-inline-item"><span class="text-white">/</span></li>
+				<li class="list-inline-item"><a href="#" class="text-white">About Chase</a></li>
+			</ul>
+          <h1 class="text-capitalize mb-4 text-lg">Who we are</h1>
+
         </div>
       </div>
     </div>
@@ -180,32 +184,37 @@
 
 
 <!-- Section About Start -->
-<section class="section about-2 position-relative">
-	<div class="container">
-		<div class="row">
+<section class="section about position-relative">
+	<div class="about-container justify-content-center mx-auto">
+		<div class="row mx-0 px-0 justify-content-center">
+			<div class="col-lg-12 text-center">
+				<div class="section-title">
+					<span class="h text-color">About Chase</span>
+					<h2 class="mt-3 mb-4 position-relative content-title"><em>Chase</em> is a guide to where you want to be</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row mx-0 px-0">
 			<div class="col-lg-6 col-md-6">
-				<div class="about-item pr-3 mb-5 mb-lg-0">
-					<span class="h6 text-color">What we are</span>
-					<h2 class="mt-3 mb-4 position-relative content-title">We are dynamic team of creative people</h2>
-					<p class="mb-5">We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier.</p>
-
-					<a href="#" class="btn btn-main btn-round-full">Get started</a>
+				<div class="about-item3 pr-3 mb-5 mb-lg-0">
+					<span class="h6 text-color mt-4">What we are</span></br></br>
+					<p class="mb-5">We provide consulting services in the area of finance, accounting, administrative services. We are with you covering the needs of your business. We accompany you as much as you want to achieve the objectives of your company.</p>
+					<p class="mb-5">It does not matter if your company is small or large, we work according to your needs, we have the experience to help you cover the recruitment and selection process, payroll and human resources.</p>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6">
 				<div class="about-item-img">
-					<img src="images/about/home-7.jpg" alt="" class="img-fluid">
+					<img src="images/about-04.jpg" alt="" class="img-fluid">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-
 <!-- Section About End -->
  
-<section class="about-info section pt-0">
-	<div class="container">
-		<div class="row justify-content-center">
+<section class="about-info section pt-0 position-relative">
+	<div class="about-info-container justify-content-center mx-auto">
+		<div class="row mx-0 px-0 justify-content-center">
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="about-info-item mb-4 mb-lg-0">
 					<h3 class="mb-3"><span class="text-color mr-2 text-md ">01.</span>Our Mission</h3>
@@ -228,8 +237,51 @@
 	</div>
 </section>
 
+
 <!-- section Counter Start -->
-<section class="section counter bg-counter">
+<section class="section cta5 position-relative">
+	<div class="cta5-container justify-content-center mx-auto">
+		<div class="row mx-0 px-0 justify-content-center">
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="counter-item text-center mb-5 mb-lg-0">
+					<i class="las la-medal color-one text-md"></i><h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">10</span> +</h3>
+					<p class="text-white">Current Projects </p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="counter-item text-center mb-5 mb-lg-0">
+					<i class="las la-globe-americas color-one text-md"></i>
+					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">5 </span></h3>
+					<p class="text-white">Clients Worldwide</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="counter-item text-center mb-5 mb-lg-0">
+					<i class="las la-user-clock color-one text-md"></i>
+					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">3000</span> +</h3>
+					<p class="text-white">Hours Worked</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="counter-item text-center">
+					<i class="las la-hand-holding-usd color-one  text-md"></i>
+					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">24</span>+</h3>
+					<p class="text-white">Processed Payrolls </p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="counter-item text-center">
+					<i class="las la-users color-one  text-md"></i>
+					<h3 class="mt-2 mb-0 text-white"><span class="counter-stat font-weight-bold">500</span>+</h3>
+					<p class="text-white">Employees</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- section Counter Start -->
+<!--<section class="section counter bg-counter">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3 col-md-6 col-sm-6">
@@ -262,12 +314,14 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <!-- section Counter End  -->
+
+
 <!--  Section Services Start -->
-<section class="section team">
-	<div class="container">
-		<div class="row justify-content-center">
+<section class="section team position-relative">
+	<div class="team-container justify-content-center mx-auto">
+		<div class="row mx-0 px-0 justify-content-center">
 			<div class="col-lg-7 text-center">
 				<div class="section-title">
 					<span class="h6 text-color">Our Team</span>
@@ -276,7 +330,7 @@
 			</div>
 		</div>
 
-		<div class="row justify-content-center">
+		<div class="row mx-0 px-0 justify-content-center">
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
@@ -299,8 +353,8 @@
 						</div>
 					</div>
 					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">Justin hammer</h4>
-						<p>Digital Marketer</p>
+						<h4 class="mt-3 mb-0 text-capitalize">Justin Hammer</h4>
+						<p>Manager</p>
 					</div>
 				</div>
 			</div>
@@ -308,7 +362,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5">
 					<div class="team-item position-relative">
-						<img src="images/team/team-2.jpg" alt="" class="img-fluid w-100">
+						<img src="images/team/team-1.jpg" alt="" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
@@ -327,8 +381,8 @@
 						</div>
 					</div>
 					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">Jason roy</h4>
-						<p>UI/UX Designer</p>
+						<h4 class="mt-3 mb-0 text-capitalize">Justin Hammer</h4>
+						<p>Manager</p>
 					</div>
 				</div>
 			</div>
@@ -336,7 +390,7 @@
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="team-item-wrap mb-5 ">
 					<div class="team-item position-relative">
-						<img src="images/team/team-3.jpg" alt="" class="img-fluid w-100">
+						<img src="images/team/team-1.jpg" alt="" class="img-fluid w-100">
 						<div class="team-img-hover">
 							<ul class="team-social list-inline">
 								<li class="list-inline-item">
@@ -355,91 +409,8 @@
 						</div>
 					</div>
 					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">Henry oswald</h4>
-						<p>Developer</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="team-item-wrap mb-5 mb-lg-0">
-					<div class="team-item position-relative">
-						<img src="images/team/team-4.jpg" alt="" class="img-fluid w-100">
-						<div class="team-img-hover">
-							<ul class="team-social list-inline">
-								<li class="list-inline-item">
-									<a href="#" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">David Williams</h4>
-						<p>Senior Marketer</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="team-item-wrap mb-5 mb-lg-0">
-					<div class="team-item position-relative">
-						<img src="images/team/team-6.jpg" alt="" class="img-fluid w-100">
-						<div class="team-img-hover">
-							<ul class="team-social list-inline">
-								<li class="list-inline-item">
-									<a href="#" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">Peter Odin</h4>
-						<p>App Developer</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6 col-sm-6">
-				<div class="team-item-wrap mb-5 mb-lg-0 ">
-					<div class="team-item position-relative">
-						<img src="images/team/team-5.jpg" alt="" class="img-fluid w-100">
-						<div class="team-img-hover">
-							<ul class="team-social list-inline">
-								<li class="list-inline-item">
-									<a href="#" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="team-item-content">
-						<h4 class="mt-3 mb-0 text-capitalize">David Spensor</h4>
-						<p>Project Manager</p>
+						<h4 class="mt-3 mb-0 text-capitalize">Justin Hammer</h4>
+						<p>Manager</p>
 					</div>
 				</div>
 			</div>
@@ -447,8 +418,10 @@
 	</div>
 </section>
 <!--  Section Services End -->
+
+
 <!-- Section Testimonial Start -->
-<section class="section testimonial bg-gray">
+<!--<section class="section testimonial bg-gray">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-7 text-center">
@@ -512,7 +485,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section>-->
 <!-- Section Testimonial End -->
 
 <section class="section cta4 py-50 text-center text-lg-left">
@@ -531,11 +504,11 @@
 			<div class="cta-block-2 bg-gray1 p-5 rounded border-1">
 				<div class="row mx-0 px-0 justify-content-center align-items-center ">
 					<div class="col-lg-7">
-						<span class="h6 text-color">For all types of companies</span>
-						<h2 class="mt-2 mb-4 mb-lg-0">Entrust Your Project to Our Best Team of Professionals</h2>
+						<span class="h6 text-color">Designed for you!</span>
+						<h2 class="mt-2 mb-4 mb-lg-0">High-level solution guided by world-class technology and expertise.</h2>
 					</div>
 					<div class="col-lg-4">
-						<a href="#" class="btn btn-main btn-round-full">Contact Us<i class="btn-icon fa fa-angle-right ml-2"></i></a>
+						<a href="getaquote.html" class="btn btn-main btn-round-full">Start Now<i class="btn-icon fa fa-angle-right ml-2"></i></a>
 
 					</div>
 				</div>
