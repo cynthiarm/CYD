@@ -2271,7 +2271,7 @@ Footer
 }
 
 .copyright {
-  margin-left: -10%;
+  margin-left: -5%;
 }
 
 .lh-35 {
@@ -2386,12 +2386,19 @@ Footer
 }
 
 .footer-logo {
-    height: 125px;
-    width: auto;
-    margin: 0;
-    position: initial;
-    padding-top: 0px;
-    margin-left: 30px;
+  height: 125px;
+  width: auto;
+  margin: 0;
+  position: initial;
+  padding-top: 0px;
+  margin-left: 50px;
+}
+
+.footer-text {
+  margin: 0;
+  position: initial;
+  padding-top: 0px;
+  margin-left: 30px;
 }
 
 .footer-links li::before {
@@ -2511,7 +2518,7 @@ Footer
   margin-bottom: 10px;
   position: relative;
   line-height: 25px;
-  margin-left: 45px;
+  margin-left: -10px;
 } 
 
 .footer-legal-links li::before {
@@ -2519,7 +2526,7 @@ Footer
   font-family: themify;
   content: "\e649";
   top: 0;
-  left: -2px;
+  left: -3px;
   height: 12px;
   width: auto;
   color: #1CB8EC;
@@ -2585,7 +2592,7 @@ Footer
 
 .footer-socials {
   padding: 5px 0px;
-  margin-left: -70px;
+  margin-left: 150px;
   float: left;
 
 } 
