@@ -1631,9 +1631,10 @@ ul.dropdown-menu li {
   opacity: 1;
 }
 
-.contact-form-wrap .form-group {
-  padding-bottom: 15px;
-  margin: 0px;
+
+
+.contact-container {
+  max-width: 1340px;
 }
 
 .contact-form-wrap .form-group .form-control {
@@ -3503,7 +3504,7 @@ li {
 .header1-logo {
   justify-content: center;
   min-width: 22%;
-  margin-left: 155px;
+  margin-left: 75px;
 }
 
 @media (max-width:500px) {
