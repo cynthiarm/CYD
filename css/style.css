@@ -4211,7 +4211,7 @@ color: #1CB8EC;
 }
 
 .onfocus .play-btn:after {
-  content: "";
+  content: "";onfocuoverl
   position: absolute;
   left: 50%;
   top: 50%;
