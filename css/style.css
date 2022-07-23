@@ -1177,8 +1177,8 @@ ul.dropdown-menu li {
 }
 
 .intro-item i {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 
@@ -1654,22 +1654,10 @@ ul.dropdown-menu li {
   border: 1px solid rgba(0,0,0,.07);
 }
 
-.card-listing.info-btns .info-toggle a.toggle-cta {
-  color: #050d3a;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1.64px;
-  font-family: TaubSans_bold,Arial,sans-serif;
-  text-transform: uppercase;
-  text-decoration: none!important;
-  display: block;
-  margin-top: 12px;
-}
 
 .card-listing.info-btns .info-toggle a.toggle-cta:hover {
   color: #0041dc;
 }
-
 
 .card-listing.info-btns .info-toggle a.toggle-cta:after {
   content: "";
