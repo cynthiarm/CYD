@@ -1659,6 +1659,7 @@ ul.dropdown-menu li {
   display: block;
   margin-right: 0;
   border: 1px solid rgba(0,0,0,.09);
+  background-color: #673ab70a;
 }
 
 
@@ -1746,7 +1747,8 @@ a:active {
 
 .pricing-links a:hover {
   color: #1CB8EC;
-  border: 1px solid rgba(0,0,0,.07)
+  border: 1px solid rgba(0,0,0,.07);
+  background-color: #8e86df;
 }
 
 /*.pricing-links a:hover i {
