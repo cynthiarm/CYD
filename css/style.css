@@ -5313,8 +5313,7 @@ color: #1CB8EC;
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  padding-top: 60px;
 }
 
 .faq .section-title h2, .faq .section-title p {
@@ -5335,7 +5334,7 @@ color: #1CB8EC;
 }
 
 .faq .faq-list li + li {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .faq .faq-list li {
@@ -5357,13 +5356,16 @@ color: #1CB8EC;
   cursor: pointer;
   text-align: center;
   color: rgba(0, 0, 0, 0.65);
-  
-  
+}
+
+
+.faq .faq-list strong {
+  text-decoration: underline;
 }
 
 .faq .faq-list .icon-help {
   font-size: 24px;
-  position: absolute;
+  position: unset;
   right: 0;
   left: 20px;
   color: #8577fb;
@@ -5414,7 +5416,6 @@ color: #1CB8EC;
     padding: 0;
   }
 }
-
 
 .faq-container {
   max-width: 1340px;
