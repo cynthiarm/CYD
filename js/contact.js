@@ -1,7 +1,7 @@
 (function ($) {
     'use strict';
 
-    var form = $('.contact__form'),
+    var form = $('.contactForm'),
         message = $('.contact__msg'),
         form_data;
 

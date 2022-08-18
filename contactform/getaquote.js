@@ -1,11 +1,12 @@
 jQuery(document).ready(function($) {
   "use strict";
-
+  
   //Contact
-  $('form.contactForm').submit(function() {
+  $('.getaQuote').submit(function() {
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+      
 
     f.children('input').each(function() { // run all inputs
 
@@ -40,6 +41,12 @@ jQuery(document).ready(function($) {
               ferror = ierror = true;
             }
             break;
+
+          case 'tel':
+            if (!telExp.test(i.val())) {
+              ferror = ierror = true;
+            }
+            break;  
 
           case 'checked':
             if (! i.is(':checked')) {
@@ -101,13 +108,13 @@ jQuery(document).ready(function($) {
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
-          $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
+          $(".sendmessage").addClass("show");
+          $(".errormessage").removeClass("show");
+          $('.getaQuote').find("input, textarea").val("");
         } else {
-          $("#sendmessage").removeClass("show");
-          $("#errormessage").addClass("show");
-          $('#errormessage').html(msg);
+          $(".sendmessage").removeClass("show");
+          $(".errormessage").addClass("show");
+          $('.errormessage').html(msg);
         }
 
       }

@@ -215,72 +215,90 @@
 				    </div>
 					<div class="quote-form mb-3">
 						<h6 class="text-color text-center mb-4">Get a Quote</h6>
-						<p class="text-white">Get a specific quote tailored to your business just filling out the following form.</p>
+						<p>Get a specific quote tailored to your business just filling out the following form.</p>
 					</div>
-					<form>
-						<div class="row row-cols-lg-2">	
-							<div class="col mb-3">
-								<label class="form-label text-white">Company Name</label>
-								<input type="text" class="form-control" placeholder="Company Name" name="companyname" id="companyname"  data-rule="companyname" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
+					<div class="form">
+						<form id="getaQuote" class="getaQuote" role="form" action="" method="post">				
+							<div class="row row-cols-lg-2">	
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Company Name</label>
+										<input name="companyname" type="text" class="form-control" placeholder="Company Name"  id="companyname"  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="row row-cols-lg-2">
-							<div class="col mb-3">
-								<label class="form-label text-white">First Name</label>
-								<input type="text" class="form-control" placeholder="First Name" name="name" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
+							<div class="row row-cols-lg-2">
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">First Name</label>
+										<input type="text" class="form-control" placeholder="First Name" name="name" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Last Name</label>
+										<input type="text" class="form-control" placeholder="Last Name" name="lastname" id="lastname" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+								</div>
 							</div>
-							<div class="col mb-3">
-								<label class="form-label text-white">Last Name</label>
-								<input type="text" class="form-control" placeholder="Last Name" name="lastname" id="lastname" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
+							<div class="row row-cols-lg-2">
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Email Address</label>
+										<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Phone Number</label>
+										<input type="tel" class="form-control" placeholder="Phone Number" name="phonenumber" id="phonenumber" data-rule="minlen:10" data-rule="required" data-rule="phonenumber" data-msg="Please enter a valid telephone number." />
+										<div class="validation"></div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="row row-cols-lg-2">
-							<div class="col mb-3">
-								<label class="form-label text-white">Email Address</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-								<div class="validation"></div>
+							<div class="row row-cols-lg-2">	
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Country</label>
+										<input type="text" class="form-control" placeholder="Country" placeholder="country" name="country" id="country"  data-rule="required" data-rule="country" data-msg="Please enter at least 4 chars" />
+										<div class="validation"></div>
+									</div>
+								</div>
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label"># Employees</label>
+										<input type="number" class="form-control" placeholder="# Employees" min="1"  name="employees" id="employees" data-rule="required" data-msg="Please enter # of Employees." data-msg="The field Value must be a number.">
+										<div class="validation"></div>
+									</div>
+								</div>
+							</div>	
+							<div class="row row-cols-lg-2">
+								<div class="col mb-3">
+									<div class="form-group">
+										<label class="form-label">Message</label>
+										<textarea name="message" class="form-control" rows="5" placeholder="Your Message" data-rule="required" data-msg="Please write something for us"></textarea>
+										<div class="validation"></div>
+									</div>
+								</div>
 							</div>
-							<div class="col mb-3">
-								<label class="form-label text-white">Phone Number</label>
-								<input type="number" class="form-control" placeholder="Phone Number" name="phonenumber" id="phonenumber"  data-rule="phonenumber" data-msg="Please enter a valid number" />
-								<div class="validation"></div>
+							<!-- form message -->
+							<div class="sendmessage text-center" id="sendmessage">Your message has been sent. Thank you!</div>
+							<div class="errormessage text-center" id="errormessage"></div>
+							<!-- Send message -->	
+							<div class="row justify-content-center mt-4">
+								<button class="btn btn-main btn-round-full" type="submit" title="Send Message">Send Message<i class="btn-icon fa fa-angle-right ml-2"></i></button>
 							</div>
-						</div>
-						<div class="row row-cols-lg-2">	
-							<div class="col mb-3">
-								<label class="form-label text-white">Country</label>
-								<input type="text" class="form-control" placeholder="Country" placeholder="country" name="country" id="country"  data-rule="country" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
-							</div>
-							<div class="col mb-3">
-								<label class="form-label text-white"># Employees</label>
-								<input type="number" class="form-control" placeholder="# Employees" min="1"  name="employees" id="employees" data-val-required="Please enter # of Employees." data-val-number="The field Value must be a number.">
-								<div class="validation"></div>
-							</div>
-						</div>	
-						<div class="row row-cols-lg-2">
-							<div class="col mb-3">
-								<label class="form-label text-white">Message</label>
-								<textarea name="message" class="form-control" rows="5" placeholder="Your Message" data-rule="required" data-msg="Please write something for us"></textarea>
-								<div class="validation"></div>
-						    </div>
-						</div>	
-						<div class="row justify-content-center align-items-center">
-							<button class="btn btn-main btn-round-full" name="submit" type="submit">Send Message<i class="btn-icon fa fa-angle-right ml-2"></i></button>
-						</div>	
-					</form>
+						</form>
+				    </div>
 			    </div>
 			</div>
 		</div>	
 	</div>
 </section>
-
-
-
-
 
 
 <!--<div class="google-map">
@@ -439,10 +457,12 @@
     
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
+    <!-- <script src="js/contact.js"></script>-->
+    <script src="contactform/getaquote.js"></script>
     <!-- Bootstrap 4.3.1 -->
     <script src="plugins/bootstrap/js/popper.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	
    <!--  Magnific Popup-->
     <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <!-- Slick Slider -->

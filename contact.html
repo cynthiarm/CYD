@@ -187,18 +187,29 @@
 <section class="contact-form-wrap section">
     <div class="contact-container justify-content-center mx-auto">
 		<div class="row mx-0 px-0 justify-content-center">
+			<div class="col-lg-12 text-center">
+				<div class="section-title">
+					<span class="h6 text-color">Contact Us</span>
+					<h2 class="mt-3 mb-4 position-relative content-title"><em>Chase</em> is here for you and your business.</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row mx-0 px-0 justify-content-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
-			  <div class="p-5 rounded box-shadow">	
-                    <form id="contactForm" class="contactForm" action="" method="post">
-					    <!-- form message -->
-						<div class="row">
+			  <div class="contact-form-wrap">
+				<div class="form">	
+					<form id="contactForm" class="contactForm" role="form" action="" method="post">
+						<!-- form message -->
+
+					<!--	<div class="row">
 							<div class="col-12">
 								<div class="alert alert-success contact__msg" style="display: none" role="alert">
 									Your message was sent successfully.
 								</div>
 							</div>
-						</div>
+						</div>-->
 						<!-- Send message -->
+						
 						<span class="h6 text-color">Get started!</span>
 						<h2 class="text-md mb-4">Contact us for any inquiry</h2>
 						
@@ -214,24 +225,31 @@
 						</div>
 						<div class="form-group">
 							<label class="form-label">Subject</label>
-							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
 							<div class="validation"></div>
 						</div>
-						<div class="form-group-2 mb-4">
+						<div class="form-group mb-4">
 							<label class="form-label">Message</label>
 							<textarea name="message" class="form-control" rows="5"  placeholder="Your Message" data-rule="required" data-msg="Please write something for us"></textarea>
 							<div class="validation"></div>
 						</div>
-						<div class="row justify-content-center">
-							<button class="btn btn-main btn-round-full" name="submit" type="submit" title="Send Message">Send Message<i class="btn-icon fa fa-angle-right ml-2"></i></button>
-						</div>				
-                    </form>
+						<!-- form message -->
+						<div class="sendmessage" id="sendmessage">Your message has been sent. Thank you!</div>
+						<div class="errormessage" id="errormessage"></div>
+						<!-- Send message -->	
+						<div class="row justify-content-center mt-4">
+							<button class="btn btn-main btn-round-full" type="submit" title="Send Message">Send Message<i class="btn-icon fa fa-angle-right ml-2"></i></button>
+						</div>
+			
+					</form>	  
+				</div>		
+				    
 			  </div>
             </div>
 
             <div class="col-lg-5 col-sm-12">
                 <div class="contact-content pl-lg-5 mt-lg-0">
-					<div class="contact-content mt-4">
+					<div class="contact-content mt-5">
                     <span class="h6 text-color">We want to support you!</span>
                     <h3 class="mb-5 mt-2">Don’t Hesitate to contact with us for any kind of information, please send us a message and we will get in touch as soon as we can...</h3>
 
@@ -410,7 +428,8 @@
     
     <!-- Main jQuery -->
     <script src="plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
+   <!--  <script src="js/contact.js"></script>-->
+    <script src="contactform/contactform.js"></script>
     <!-- Bootstrap 4.3.1 -->
     <script src="plugins/bootstrap/js/popper.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
