@@ -565,7 +565,7 @@ progress {
   display: inline-block;
 }
 .list-inline-item:not(:last-child) {
-  margin-left: 0.5rem;
+  margin-left: 0.2rem;
 }
 
 .initialism {
