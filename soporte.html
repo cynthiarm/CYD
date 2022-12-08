@@ -93,8 +93,8 @@
 						<div class="col-xl-6 col-lg-6">
 							<div class="menu-wrapper d-flex align-items-center justify-content-center">
 								<!-- Main-menu -->
-								<div class="main-menu d-none d-lg-block">
-									<nav>
+								<nav class="main-nav float-right d-none d-lg-block">
+									<ul id="navigation">
 										<ul id="navigation">
 										    <li class="nav-item">	                                                                                          
 												<a class="nav-link" href="index-esp.html">Inicio</a>
@@ -113,16 +113,16 @@
 												</ul>
 											</li>
 										<!--<li class="nav-item"><a href="#faqs">FAQs</a></li>-->
-											<li class="nav-item"><a href="#">Contacto <i class="fas fa-chevron-down small"></i></a>
+											<li class="nav-item active"><a href="#">Contacto <i class="fas fa-chevron-down small"></i></a>
 												<ul class="submenu">
 													<li><a href="contacto.html">Contacto</a></li>
-													<li><a href="soporte.html">Soporte</a></li>
+													<li class="nav-item active"><a href="soporte.html">Soporte</a></li>
 													<li><a href="tel:+23-345-67890">Ventas</a></li>
 												</ul>
 											<li class="nav-item"><a href="#"><span class="fa fa-light fa-globe"></span></a>
 												<ul class="submenu">
-													<li><a href="index.html">Inglés</a></li>
-													<li><a href="index-esp.html">Español</a></li>
+													<li><a href="support.html">Inglés</a></li>
+													<li><a href="soporte.html">Español</a></li>
 												</ul>
 											</li>											
 										</ul>										
@@ -133,28 +133,8 @@
 						<form class="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
 							<a href="cotizar.html" class="btn btn-solid-border btn-round-full">Cotizar Ahora</a>
 							<!--	<a href="login.html" class="btn3">Sign In</a>-->
-							<a href="#login" class="btn3"><i class="fa fa-user mr-2"></i>Iniciar Sesión</a>
+							<a href="https://cyd-team.com/" class="btn3"><i class="fa fa-user mr-2"></i>Iniciar Sesión</a>
 						</form> 
-
-						<!-- Mobile Menu -->
-						<div class="col-12">
-							<div class="mobile_menu d-block d-lg-none">
-								<div class="slicknav_menu">
-									<span class="slicknav_icon">
-										<a href="#" class="slicknav_btn slicknav_collapsed">
-											<span class="fa fa-bars"></span>
-										</a>
-									</span>
-							<!--	<ul class="slicknav_nav" aria-hidden="false" role="menu" style="display:block;">
-									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
-									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
-									  <li><a href="index.html" role="menuitem" tabindex="0">Home</a></li>
-									  <li class="slicknav_parent slicknav_collapsed"></li>
-									 	 <a href="#" tabindex="0">Blog</a>
-										 <span class="slicknav_arrow mx-0 px-0">+</span>
-									</ul>	-->
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -353,13 +333,13 @@
 								</div>
 								<div class="col-lg-4">
 									<ul class="list-inline footer-socials text-center text-lg-center text-md-center">
-										<li class="list-inline-item"><a href="#" class="twitter"><i
-													class="fab fa-twitter"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="facebook"><i
+									<!--	<li class="list-inline-item"><a href="#" class="twitter"><i
+													class="fab fa-twitter"></i></a></li>-->
+										<li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100087458817851" class="facebook"><i
 													class="fab fa-facebook-f"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="instagram"><i
+										<li class="list-inline-item"><a href="https://www.instagram.com/cydplatform/" class="instagram"><i
 													class="fab fa-instagram"></i></a></li>
-										<li class="list-inline-item"><a href="#" class="linkedin"><i
+										<li class="list-inline-item"><a href="https://www.linkedin.com/company/cyd-team/about/?viewAsMember=true" class="linkedin"><i
 													class="fab fa-linkedin"></i></a></li></br>
 									</ul>
 								</div>
@@ -391,6 +371,7 @@
     <!-- Counterup -->
     <script src="plugins/counterup/jquery.waypoints.min.js"></script>
     <script src="plugins/counterup/jquery.counterup.min.js"></script>
+	<script src="plugins/mobile-nav/mobile-nav.js"></script>
 
     <!-- Google Map -->
     <script src="plugins/google-map/map.js"></script>
